@@ -1,0 +1,57 @@
+body {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: #fff !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#home h1 span {
+    color: #dc3545;
+}
+
+#home {
+    background: linear-gradient(to bottom right, #ffffff, #f8f9fa);
+}
+
+
+.nav-link:hover {
+    color: #dc3545 !important;
+}
+
+.btn-primary:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+}
+
+
+.logo {
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.carousel img {
+    object-fit: cover;
+    height: 500px;
+}
+
+
+#contact input,
+#contact textarea {
+    border-radius: 10px;
+}
+
+footer {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}

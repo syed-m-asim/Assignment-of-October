@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Red Tech Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm fixed-top">
+      <div class="container-fluid">
+        <a href="index.html" class="d-flex align-items-center text-decoration-none">
+          <img class="logo rounded-5" src="logo.png" alt="logo" height="45">
+          <span class="navbar-brand ms-2 fw-bold text-danger">Red Tech</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <div class="ms-lg-3 mt-3 mt-lg-0">
+            <a href="#" class="btn btn-dark me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="d-flex align-items-center justify-content-center text-center bg-light vh-100">
+      <div data-aos="fade-up">
+        <h1 class="fw-bold">Hi, I'm <span class="text-primary">Muhammad Asim</span></h1>
+        <h4>Front-End Developer | UI Designer | Freelancer</h4>
+        <p class="lead mt-3">I build modern, responsive web interfaces using HTML, CSS, JavaScript, and Bootstrap.</p>
+        <a href="#projects" class="btn btn-primary mt-3">View My Work</a>
+        <a href="#contact" class="btn btn-outline-dark mt-3 ms-2">Hire Me</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container text-center" data-aos="fade-up">
+        <h2 class="fw-bold mb-4">About Me</h2>
+        <p class="lead mx-auto" style="max-width:800px;">
+          I'm a passionate Front-End Developer dedicated to creating beautiful, user-friendly, and responsive
+          websites. I love turning ideas into functional and visually appealing interfaces using HTML, CSS,
+          JavaScript, and Bootstrap.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+      <div class="container text-center" data-aos="fade-up">
+        <h2 class="fw-bold mb-5">My Skills</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-2 col-6 mb-4"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="70" alt="HTML">
+          </div>
+          <div class="col-md-2 col-6 mb-4"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="70" alt="CSS">
+          </div>
+          <div class="col-md-2 col-6 mb-4"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="70"
+              alt="JS"></div>
+          <div class="col-md-2 col-6 mb-4"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="70"
+              alt="Bootstrap"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+      <div class="container" data-aos="fade-up">
+        <h2 class="fw-bold text-center mb-5">My Projects</h2>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="1.jpg" class="d-block w-100 rounded-3 shadow" alt="Slide 1">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded-3">
+                <h5>Creative Web Design</h5>
+                <p>Modern, responsive, and visually appealing websites.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="2.jpg" class="d-block w-100 rounded-3 shadow" alt="Slide 2">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded-3">
+                <h5>Front-End Development</h5>
+                <p>Crafting interfaces using HTML, CSS, JS, and Bootstrap.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="3.jpg" class="d-block w-100 rounded-3 shadow" alt="Slide 3">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded-3">
+                <h5>Responsive Layouts</h5>
+                <p>Seamless performance on all devices.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark text-light mt-5">
+      <div class="container text-center" data-aos="fade-up">
+        <h2 class="fw-bold mb-4">Contact Me</h2>
+        <p class="lead mb-4">Interested in working together? Let's connect!</p>
+        <form id="contactForm" class="mx-auto" style="max-width:600px;">
+          <div class="mb-3">
+            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <textarea id="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary px-4">Send Message</button>
+        </form>
+        <div class="mt-4">
+          <a href="#" class="text-light me-3"><i class="bi bi-github fs-3"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 bg-secondary text-light">
+    <p class="mb-0">© 2025 Red Tech | All Rights Reserved</p>
+  </footer>
+
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login to Red Tech</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="loginEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="loginPassword" required>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+          </form>
+          <div class="text-center mt-3">
+            <p>Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal"
+                data-bs-dismiss="modal">Sign Up</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Create Your Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="signupForm">
+            <div class="mb-3">
+              <label for="signupName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="signupName" required>
+            </div>
+            <div class="mb-3">
+              <label for="signupEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="signupEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="signupPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="signupPassword" required>
+            </div>
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="confirmPassword" required>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+              <label class="form-check-label" for="agreeTerms">I agree to the <a href="#">Terms and
+                  Conditions</a></label>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary">Sign Up</button>
+            </div>
+          </form>
+          <div class="text-center mt-3">
+            <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"
+                data-bs-dismiss="modal">Login</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Links -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
